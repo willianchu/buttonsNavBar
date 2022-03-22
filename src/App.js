@@ -1,20 +1,20 @@
 import { useContext } from 'react';
-import Info from 'pages/Info';
-import Login from 'pages/Login';
-import { authContext } from 'providers/AuthProvider';
-import CounterProvider from 'providers/CounterProvider';
+import Play from 'pages/play';
+import HowTo from 'pages/howto';
+import HighScores from 'pages/highscores';
+import { menuContext } from 'providers/NavProvider';
 import 'App.css';
 
 export default function App() {
-  const { auth } = useContext(authContext);
-
+  const { selector, onPlay, onHowTo, onHighScores } = useContext(menuContext);
+  
   return (
     <div className="App">
-      <CounterProvider>
-        <h1>My App</h1>
-        {!auth && <Login />}
-        {auth && <Info />}
-      </CounterProvider>
+      <h1>My App</h1>
+      {selector === "play" && <Play />}
+      {selector === "howto" && <HowTo />}
+      {selector === "highscores" && <HighScores />}
+      
     </div>
   );
 }

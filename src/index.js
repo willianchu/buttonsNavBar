@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'App';
-import AuthProvider from 'providers/AuthProvider';
+import SelectorProvider from 'providers/NavProvider';
 
 ReactDOM.render(
-  <AuthProvider>
+  <SelectorProvider>
+  
     <App />
-  </AuthProvider>,
+
+  </SelectorProvider>
+  ,
   document.getElementById('root')
 );
