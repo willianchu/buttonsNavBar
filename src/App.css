@@ -1,0 +1,21 @@
+.UserInfo div {
+  background-color: lightgrey;
+  margin: 1px;
+  /* border: solid 1px; */
+  padding: 0.5em;
+  width: 14em;
+}
+
+input {
+  width: 16em;
+}
+
+p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+span.counter {
+  display: inline-block;
+  width: 2em;
+}
