@@ -1,10 +1,10 @@
-import Selector from 'NavButtons';
+import NavButtons from 'NavButtons';
 
 export default function Play() {
 
   return (
     <div className="play">
-      <Selector />
+      <NavButtons />
       <h1> PLAY </h1>
       <div>          Game DIV is Here</div>
     </div>

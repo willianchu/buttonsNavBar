@@ -1,10 +1,10 @@
-import Selector from 'NavButtons';
+import NavButtons from 'NavButtons';
 
 export default function HowTo() {
 
   return (
     <div className="howTo">
-      <Selector />
+      <NavButtons />
       <h1>How To</h1>
       <div> How To DIV is here </div>
     </div>
